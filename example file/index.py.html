@@ -1,0 +1,22 @@
+<h1>首頁</h1>
+
+<?py
+name = GET.get("name", ["Guest"])[0]
+print("Hello", name)
+?>
+
+<hr>
+
+<?py
+include("header.html")
+?>
+
+<hr>
+
+<?py
+if "count" not in session:
+    session["count"] = 0
+session["count"] += 1
+
+print("你來了", session["count"], "次")
+?>
