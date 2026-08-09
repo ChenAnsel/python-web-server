@@ -1,18 +1,19 @@
 <h1>首頁</h1>
-
+#write the code in <?py  ?> 
+#you can run any python code here
 <?py
 name = GET.get("name", ["Guest"])[0]
 print("Hello", name)
-?>
+?> 
 
 <hr>
-
+#use include() to include the file
 <?py
-include("header.html")
+include("header.html") 
 ?>
 
 <hr>
-
+#use session[]to read the session
 <?py
 if "count" not in session:
     session["count"] = 0
